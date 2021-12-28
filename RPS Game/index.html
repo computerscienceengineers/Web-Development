@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock, Paper, Scissors!</title>
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- My css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik:900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+  <h1>Rock, Paper, Scissors!</h1>  
+  </header>
+  <div class="game container">
+    <div class="player">
+      <div class="text player-rotate">Player</div>
+      <div class="option player-rotate">
+        <i class="fas fa-hand-rock" onclick="rock()" id="player-rock"></i>
+        <i class="fas fa-hand-paper" onclick="paper()" id="player-paper"></i>
+        <i class="fas fa-hand-scissors" onclick="scissors()" id="player-scissors"></i>
+      </div>
+      <div class="score-player score player-rotate" id="player_score">0</div>
+    </div>
+    <div class="vs">vs</div>
+    <div class="computer">
+      <div class="text-computer text computer-rotate">Computer</div>
+      <div class="option computer-rotate">
+        <i class="fas fa-hand-rock" id="computer-rock"></i>
+        <i class="fas fa-hand-paper" id="computer-paper"></i>
+        <i class="fas fa-hand-scissors" id="computer-scissors"></i>
+      </div>
+      <div class="score-computer score computer-rotate" id="computer_score">0</div>
+    </div>
+  </div>
+  <div class="container message" id="message">
+    Choose your destiny!
+  </div>
+  <div id="reset" onclick="resetConfirm()">Reset Game.</div>
+  <!-- JQuery for manipulate css -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- My js -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

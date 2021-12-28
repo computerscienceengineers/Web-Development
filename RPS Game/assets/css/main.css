@@ -1,0 +1,106 @@
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Bungee', cursive;  
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 20px 20px 50px #e8eddf;
+}
+
+body {
+  background-color: #cfdbd5;
+  font-family: 'Rubik', sans-serif; 
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vs {
+  text-align: center;
+  font-family: 'Bold Times New Roman', cursive;
+  font-size: 70px;
+  align-self: center;
+}
+
+.player, .computer {
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #e8eddf;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.player {
+  background-color: #247ba0;
+  transform: skewX(10deg);
+}
+
+.computer {
+  background-color: #d31010;
+  transform: skewX(-10deg);
+}
+
+.message {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.player-rotate {
+  transform: skewX(-10deg);  
+}
+
+.computer-rotate {
+  transform: skewX(10deg);
+}
+ 
+.option {
+  display: flex;
+  font-size: 75px;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+
+.player-rotate .fa-hand-rock:hover, .player-rotate .fa-hand-paper:hover, .player-rotate .fa-hand-scissors:hover {
+  text-shadow: 2px 2px 30px black;
+  cursor: pointer;
+}
+
+.score {
+  margin-bottom: 10px;
+  font-size: 30px;  
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.text-computer {
+  text-align: right;
+}
+
+.score-computer {
+  text-align: left;
+}
+
+.score-player {
+  text-align: right;
+  direction: rtl;
+}
+
+#reset {
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
