@@ -1,0 +1,154 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/*body{
+  background-color:  rgb(204,204,204);
+}
+*/
+
+
+h3{
+  margin-top: 0;
+  
+  margin-bottom: 5px;
+  background-color: #eaeae1;
+
+
+}
+h5{
+
+  text-decoration: underline;
+}
+ul{
+  list-style-position: inside;
+  margin-left: 15px;
+}
+table , th,td{
+  border:1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.cont{
+ 
+word-wrap: break-word;
+margin-top: 5px;
+
+}
+input{
+  margin:1px;
+}
+
+div.resume{
+  background-color: white;
+  
+padding : 30px;
+
+
+border: 2px solid black;
+}
+div.generator{
+  background-color: white;
+ 
+padding : 30px;
+
+
+border: 2px solid black;
+
+}
+header.intro{
+  display: flex;
+  padding: 5px;
+  margin-bottom: 0px;
+ 
+  
+}
+.resume div.left {
+  width: 60%;
+/*padding: 20px;*/
+
+}
+.resume div.right{
+ width: 40%;
+/*  text-align: right;*/
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+
+}
+
+
+
+
+.resume .education table,.resume .education th,.resume .education td{
+  padding: 5px;
+  text-align: center;
+}
+.generator .education table,.generator .education th,.generator .education td{
+  padding: 2px;
+  text-align: center;
+}
+.projects table,.project th,.project td{
+  
+text-align: left;
+}
+
+.resume .exp .company{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.exp .company-1{
+  margin-left: 30px;
+
+}
+p{
+  display: inline;
+}
+.form-control{
+  display:inline-block;
+}
+#hi{
+  display:none;
+  background-color:black;
+  border: solid;
+
+}
+header .form-group{
+  padding:0;
+  margin:0;
+}
+h3.objective{
+  margin-top:0;
+}
+#idobjective{
+  
+  margin-top:1px;
+  padding:0;
+}
+ul,li{
+  padding-top: 5px;
+}
+table{
+  width:100%;
+}
+@media only screen and (max-width: 768px) {
+  header.intro{
+    flex-direction: column;
+  }
+  .resume div.right{
+    align-items: flex-start;
+    width: 100%;
+  }
+  .resume div.left{
+    width: 100%;
+  }
+  .resume .exp .company{
+    flex-direction: column;
+  }
+}
+
+
