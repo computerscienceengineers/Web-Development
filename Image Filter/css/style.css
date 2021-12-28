@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: #9DB6D0;
+    font-family: 'Comfortaa', cursive;
+    padding: 20px;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter__choose h2 {
+    text-align: center;
+}
+
+.filter__choose {
+    padding: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.filter__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    min-height: 416px;
+    justify-content: space-between;
+}
+
+.filter__row {
+    min-width: 600px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.filter__row:last-child input{
+    background-color: #711A54;
+    color: #fff;
+    padding: 13px;
+    font-size: 23px;
+}
+
+.filter__row:not(:last-child) {
+    min-width: 735px;
+}
+
+canvas {
+    width: 800px;
+    border-radius: 24px;
+    min-height: 450px;
+    background-color: #fff;
+}
+
+input {
+    min-width: 165px;
+    min-height: 34px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+input[type="file" i] {
+    border-radius: 0px;
+    font-size: 19px;
+    min-width: 355px;
+}
+
+
+
+

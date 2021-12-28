@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div class="filter">
+            <section class="filter__img">
+                <h1>Filter Image</h1>
+                <canvas id="can"></canvas>
+            </section>
+
+            <section class="filter__choose">
+                <h2>Choose Filter</h2>
+                <div class="filter__buttons">  
+                    <div class="filter__row">
+                        <input type="button" id="grayscale" value="Grayscale" onclick="doGray()">
+                        <input type="button" id="rainbow" value="Rainbow" onclick="doRainbow()">
+                        <input type="button" id="window" value="Window" onclick="doWindow()">                     
+                    </div>
+                    <div class="filter__row">
+                        <input type="button" id="red" value="Red" onclick="doRed()">
+                        <input type="button" id="blur" value="Blur" onclick="doBlur()">
+                        <!-- <input type="button" id="mirror" value="Mirror" onclick="doMirror()">    -->
+                    </div>
+                    <div class="filter__row">
+                        <input type="button" id="reset" value="Reset Image" onclick="resetImg()">
+                        <input type="button" id="clear" value="Clear Image" onclick="clearImg()">
+                    </div> 
+                </div>
+
+            </section>
+        </div>
+
+        <h2>Load Image</h2>
+        <input type="file" id="fileinput" multiple="false" accept="image/*" onchange="loadImage()">
+        
+    </main>
+
+<script src="js/SimpleImage.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
